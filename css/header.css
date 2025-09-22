@@ -24,8 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* Solid background ensures text shows even without hero image */
-  background-color: #0d3b3e;
+  background-color: rgba(13, 59, 62, 0.85); /* semi-transparent overlay for readability */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,10 +41,12 @@
   gap: 0.5rem;
 }
 
+/* Logo + Title */
 .logo-title {
   display: flex;
+  flex-direction: column; /* logo above title for mobile */
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .logo {
@@ -56,27 +57,28 @@
 
 /* Title */
 .header h1 {
-  font-size: 2rem;  /* slightly larger */
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
-  color: #ffffff;   /* forces white */
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4); /* optional subtle pop */
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 /* Navigation */
 .nav {
-  margin-top: 0.75rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .nav a {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
   padding: 0.5rem 0.9rem;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #c7f7d4;      /* light green text */
+  color: #c7f7d4; /* light green text */
   text-decoration: none;
   font-weight: 500;
   transition: background 0.3s ease, transform 0.2s ease, color 0.2s ease;
@@ -85,11 +87,10 @@
 .nav a:hover {
   background-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-1px);
-  color: #ffffff;       /* optional: turn white on hover for contrast */
+  color: #ffffff;
 }
 
-
-/* Responsive Adjustments */
+/* Desktop Layout */
 @media (min-width: 700px) {
   .header-inner {
     flex-direction: row;
@@ -97,11 +98,18 @@
     align-items: center;
   }
 
+  .logo-title {
+    flex-direction: row; /* logo beside title on desktop */
+    align-items: center;
+    gap: 0.75rem;
+  }
+
   .nav {
     margin-top: 0;
   }
 }
 
+/* Mobile Layout */
 @media (max-width: 480px) {
   .hero {
     height: 200px;

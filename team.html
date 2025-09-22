@@ -4,51 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meet the Team - Bollinger Environmental, Inc.</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/team.css">
 </head>
 <body>
-  <!-- Header with Hero -->
-  <header class="header">
-  <div class="hero">
-    <!-- Optional hero image -->
-    <!-- <img src="Assets/environmental-landscape.jpg" alt="Wetlands landscape" class="hero-img"> -->
-    <div class="overlay">
-      <div class="container header-inner">
-        <div class="logo-title">
-          <img src="Assets/logo.jpg" alt="BEI Logo" class="logo">
-          <h1>Bollinger Environmental, Inc.</h1>
-        </div>
-        <nav class="nav">
-          <a href="index.html">Welcome</a>
-          <a href="services.html">Services</a>
-          <a href="team.html">Meet the Team</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
+  <!-- Header -->
+  <div data-include="js/header.html"></div>
 
-  <main>
+  <main class="container">
     <section class="section">
       <div class="section-content">
         <h2>Meet the Team</h2>
-
         <div class="team-grid">
           <div class="team-member">
-            <img src="Assets/temp.jpg" alt="Paul Bollinger">
+            <img src="assets/temp.jpg" alt="Paul Bollinger">
             <h3>Paul Bollinger</h3>
             <p>Paul Bollinger has over 10 years of environmental consulting experience. This experience has led to a diversity of environmental situations and projects.</p>
           </div>
 
           <div class="team-member">
-            <img src="Assets/temp.jpg" alt="Valerie Smith">
+            <img src="assets/temp.jpg" alt="Valerie Smith">
             <h3>Valerie Smith</h3>
             <p>Valerie specializes in wetland permitting and ecological restoration. She brings extensive knowledge of local ordinances and federal regulations.</p>
           </div>
 
           <div class="team-member">
-            <img src="Assets/temp.jpg" alt="Mark Johnson">
+            <img src="assets/temp.jpg" alt="Mark Johnson">
             <h3>Mark Johnson</h3>
             <p>Mark focuses on vegetative monitoring and flora mapping. His expertise includes endangered species searches and environmental compliance reporting.</p>
           </div>
@@ -57,10 +41,9 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Bollinger Environmental, Inc. All rights reserved.</p>
-    </div>
-  </footer>
+  <!-- Footer -->
+  <footer class="footer" data-include="js/footer.html"></footer>
+
+  <script src="js/include.js"></script>
 </body>
 </html>
