@@ -1,0 +1,78 @@
+/* Services List (Accordion Style) */
+.services-list {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.services-list details {
+  background: #fff;
+  border: 1px solid #cde7da;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+.services-list details:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.services-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0d3b3e;
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.3;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.services-list summary::marker {
+  content: none;
+}
+
+.services-list summary::before {
+  content: "▼";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  transition: transform 0.3s ease;
+}
+
+.services-list details[open] summary::before {
+  transform: rotate(180deg);
+}
+
+.services-list p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 0;  /* remove extra padding so text fills full box */
+  text-align: left;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-wrap;  /* ensures text wraps naturally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .services-list summary {
+    font-size: 1rem;
+  }
+
+  .services-list p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 700px) {
+  .services-list {
+    width: 100%;
+  }
+}

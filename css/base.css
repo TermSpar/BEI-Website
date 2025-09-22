@@ -1,0 +1,20 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  background-color: #f8fbf9;
+  color: #1e2d2f;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

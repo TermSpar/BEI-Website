@@ -1,0 +1,31 @@
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea, button {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #cde7da;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background-color: #145c63;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d3b3e;
+}

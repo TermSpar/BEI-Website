@@ -1,0 +1,118 @@
+/* Header & Hero */
+.header {
+  position: relative;
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #0d3b3e; /* fallback if no image */
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Solid background ensures text shows even without hero image */
+  background-color: #0d3b3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Header Inner */
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 6px;
+}
+
+/* Title */
+.header h1 {
+  font-size: 2rem;  /* slightly larger */
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;   /* forces white */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4); /* optional subtle pop */
+}
+
+/* Navigation */
+.nav {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav a {
+  font-size: 1.1rem; 
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #c7f7d4;      /* light green text */
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+  color: #ffffff;       /* optional: turn white on hover for contrast */
+}
+
+
+/* Responsive Adjustments */
+@media (min-width: 700px) {
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 200px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
