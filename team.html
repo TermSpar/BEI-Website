@@ -9,41 +9,56 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/loading.css">
 </head>
 <body>
+
   <!-- Header -->
   <div data-include="js/header.html"></div>
 
-  <main class="container">
-    <section class="section">
-      <div class="section-content">
-        <h2>Meet the Team</h2>
-        <div class="team-grid">
-          <div class="team-member">
-            <img src="assets/temp.jpg" alt="Paul Bollinger">
-            <h3>Paul Bollinger</h3>
-            <p>Paul Bollinger has over 10 years of environmental consulting experience. This experience has led to a diversity of environmental situations and projects.</p>
-          </div>
-
-          <div class="team-member">
-            <img src="assets/temp.jpg" alt="Valerie Smith">
-            <h3>Valerie Smith</h3>
-            <p>Valerie specializes in wetland permitting and ecological restoration. She brings extensive knowledge of local ordinances and federal regulations.</p>
-          </div>
-
-          <div class="team-member">
-            <img src="assets/temp.jpg" alt="Mark Johnson">
-            <h3>Mark Johnson</h3>
-            <p>Mark focuses on vegetative monitoring and flora mapping. His expertise includes endangered species searches and environmental compliance reporting.</p>
-          </div>
-        </div>
+  <!-- Wrapper for fade-in content -->
+  <div id="page-wrapper">
+    <main class="container">
+      <div id="skeleton-loader">
+        <div class="skeleton skeleton-heading"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-heading"></div>
+        <div class="skeleton skeleton-text"></div>
       </div>
-    </section>
-  </main>
+
+      <div id="page-content" style="display:none;">
+        <section class="section">
+          <div class="section-content">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+              <div class="team-member">
+                <img src="assets/temp.jpg" alt="Paul Bollinger">
+                <h3>Paul Bollinger</h3>
+                <p>Paul Bollinger has over 10 years of environmental consulting experience...</p>
+              </div>
+
+              <div class="team-member">
+                <img src="assets/temp.jpg" alt="Valerie Smith">
+                <h3>Valerie Smith</h3>
+                <p>Valerie specializes in wetland permitting and ecological restoration...</p>
+              </div>
+
+              <div class="team-member">
+                <img src="assets/temp.jpg" alt="Mark Johnson">
+                <h3>Mark Johnson</h3>
+                <p>Mark focuses on vegetative monitoring and flora mapping...</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
 
   <!-- Footer -->
   <footer class="footer" data-include="js/footer.html"></footer>
 
   <script src="js/include.js"></script>
+  <script src="js/loading.js"></script>
 </body>
 </html>

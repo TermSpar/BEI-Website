@@ -9,104 +9,118 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/loading.css">
 </head>
 <body>
 
   <!-- Header -->
   <div data-include="js/header.html"></div>
 
-  <main class="container">
-    <section class="section">
-      <h2>Consulting Services</h2>
-      <p>Bollinger Environmental, Inc. can provide the following services:</p>
-
-      <div class="services-list">
-        <details>
-          <summary>Wetland delineations</summary>
-          <p>Any land development project usually requires a wetland delineation. We can perform wetland delineations of project sites to determine the limits of wetlands present using methodology outlined in the 1987 Corps of Engineers Wetland Delineation Manual. The results of the field investigation are summarized in a letter report suitable for permitting by the U.S. Army Corps of Engineers (USACE).</p>
-        </details>
-
-        <details>
-          <summary>Federal, Nationwide, Regional, and Individual Wetland Permitting (Section 404)</summary>
-          <p>USACE jurisdictional wetlands require a federal nationwide, regional, or individual permit to impact. The necessary documentation and exhibits can be put together suitable for permitting purposes.</p>
-        </details>
-
-        <details>
-          <summary>State Water Quality Certification (Section 401)</summary>
-          <p>The IEPA issues water quality certification for projects not covered under section 404. On complex projects water quality certification is necessary along with a federal permit. The necessary documentation and exhibits can be put together suitable for permitting purposes.</p>
-        </details>
-
-        <details>
-          <summary>Local wetland permitting</summary>
-          <p>Some Chicago region counties (e.g., DuPage, McHenry, Kane, Lake Counties) have adopted local ordinances to regulate wetlands and natural areas. These ordinances are usually more stringent than federal or state regulations. We have proven success getting the most complex projects approved.</p>
-        </details>
-
-        <details>
-          <summary>Environmental review for compliance for government agencies</summary>
-          <p>Consulting services as an environmental reviewer include assisting Villages, Counties, etc. in reviewing plans and site visits on land improvement projects as they relate to local ordinances. Recommendations are usually given on compliance.</p>
-        </details>
-
-        <details>
-          <summary>Tree surveys that comply with local ordinances</summary>
-          <p>Local ordinances and/or agencies (IDOT) have their own criteria for conducting tree surveys. Most of the time trees are tagged, sized, identified, and evaluated for condition and form.</p>
-        </details>
-
-        <details>
-          <summary>Vegetative monitoring for federal to local compliance</summary>
-          <p>Vegetative monitoring is usually a requirement when a permit for a project is issued that allows a wetland mitigation area or natural area enhancement in-lieu of impacts. Monitoring visits are conducted and reports written on the status of permitted natural areas.</p>
-        </details>
-
-        <details>
-          <summary>Wetland and natural area mitigation design</summary>
-          <p>Wetland and natural area mitigation designs are sometimes a requirement for a land improvement project approval. These designs are coordinated with an engineer as hydrology is a key factor. Our designs incorporate sound ecological knowledge for success.</p>
-        </details>
-
-        <details>
-          <summary>Natural area management and restoration plans</summary>
-          <p>Plans and specifications need to be drawn-up for created wetland mitigation and natural areas. This provides a road map on how the created and/or enhanced areas should be managed in the short and long-term.</p>
-        </details>
-
-        <details>
-          <summary>Flora mapping with written reports</summary>
-          <p>Plant community mapping and quality assessment are useful for conservation funding purposes. Tasks include delineating, describing, and assigning quality ratings for all plant communities utilizing the Illinois Natural Areas Inventory grading system or other methodologies. Communities are mapped on a current aerial and a report is written.</p>
-        </details>
-
-        <details>
-          <summary>Endangered and threatened species searches</summary>
-          <p>Endangered and threatened (E & T) species searches can be a requirement of a permit or in a request for proposal from an agency. The E & T species search can be as simple as an ECOCAT submittal to the IDNR or as complex as a site with a written report on population size and vitality.</p>
-        </details>
-
-        <details>
-          <summary>Erosion control inspections and recommendations</summary>
-          <p>Most erosion problems within waterways are a direct result of land improvement projects. Federal, state and local regulations require erosion control inspection. Inspections help keep waterways clean and projects moving.</p>
-        </details>
-
-        <details>
-          <summary>Best management practices (BMP) design and recommendations</summary>
-          <p>BMPs are incorporated into a project on a case-by-case basis. Identifying potential problem areas ahead of time and selecting the correct BMP improves permitting situations and construction activities.</p>
-        </details>
-
-        <details>
-          <summary>NPDES / Designated Erosion Control Inspector</summary>
-          <p>Designated Erosion Control Inspector (DECI): A person responsible for verifying compliance and ongoing maintenance of approved soil erosion and sediment control plan measures. Under IEPA, NPDES Phase II permits require standards for SE/SC, water quality, and reporting.</p>
-        </details>
-
-        <details>
-          <summary>Public hearings on environmental issues</summary>
-          <p>Presentations may be required at a public hearing to show compliance with environmental regulations. Presentations can occur on large or small scales depending on the project.</p>
-        </details>
-
-        <details>
-          <summary>Environmental education</summary>
-          <p>We provide environmental education to public and/or private entities on environmental issues and plant identification.</p>
-        </details>
+  <!-- Wrapper for fade-in content -->
+  <div id="page-wrapper">
+    <main class="container">
+      <div id="skeleton-loader">
+        <div class="skeleton skeleton-heading"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-heading"></div>
+        <div class="skeleton skeleton-text"></div>
       </div>
-    </section>
-  </main>
+
+      <div id="page-content" style="display:none;">
+        <section class="section">
+          <h2>Consulting Services</h2>
+          <p>Bollinger Environmental, Inc. can provide the following services:</p>
+          <div class="services-list">
+            <details>
+            <summary>Wetland delineations</summary>
+            <p>Any land development project usually requires a wetland delineation. We can perform wetland delineations...</p>
+          </details>
+
+          <details>
+            <summary>Federal, Nationwide, Regional, and Individual Wetland Permitting (Section 404)</summary>
+            <p>USACE jurisdictional wetlands require a federal nationwide, regional, or individual permit...</p>
+          </details>
+
+          <details>
+            <summary>State Water Quality Certification (Section 401)</summary>
+            <p>The IEPA issues water quality certification for projects not covered under section 404...</p>
+          </details>
+
+          <details>
+            <summary>Local wetland permitting</summary>
+            <p>Some Chicago region counties (e.g., DuPage, McHenry, Kane, Lake Counties) have adopted local ordinances...</p>
+          </details>
+
+          <details>
+            <summary>Environmental review for compliance for government agencies</summary>
+            <p>Consulting services as an environmental reviewer include assisting Villages, Counties, etc...</p>
+          </details>
+
+          <details>
+            <summary>Tree surveys that comply with local ordinances</summary>
+            <p>Local ordinances and/or agencies (IDOT) have their own criteria for conducting tree surveys...</p>
+          </details>
+
+          <details>
+            <summary>Vegetative monitoring for federal to local compliance</summary>
+            <p>Vegetative monitoring is usually a requirement when a permit for a project is issued...</p>
+          </details>
+
+          <details>
+            <summary>Wetland and natural area mitigation design</summary>
+            <p>Wetland and natural area mitigation designs are sometimes a requirement for a land improvement project...</p>
+          </details>
+
+          <details>
+            <summary>Natural area management and restoration plans</summary>
+            <p>Plans and specifications need to be drawn-up for created wetland mitigation and natural areas...</p>
+          </details>
+
+          <details>
+            <summary>Flora mapping with written reports</summary>
+            <p>Plant community mapping and quality assessment are useful for conservation funding purposes...</p>
+          </details>
+
+          <details>
+            <summary>Endangered and threatened species searches</summary>
+            <p>Endangered and threatened (E & T) species searches can be a requirement of a permit...</p>
+          </details>
+
+          <details>
+            <summary>Erosion control inspections and recommendations</summary>
+            <p>Most erosion problems within waterways are a direct result of land improvement projects...</p>
+          </details>
+
+          <details>
+            <summary>Best management practices (BMP) design and recommendations</summary>
+            <p>BMPs are incorporated into a project on a case-by-case basis...</p>
+          </details>
+
+          <details>
+            <summary>NPDES / Designated Erosion Control Inspector</summary>
+            <p>Designated Erosion Control Inspector (DECI): A person responsible for verifying compliance...</p>
+          </details>
+
+          <details>
+            <summary>Public hearings on environmental issues</summary>
+            <p>Presentations may be required at a public hearing to show compliance with environmental regulations...</p>
+          </details>
+
+          <details>
+            <summary>Environmental education</summary>
+            <p>We provide environmental education to public and/or private entities on environmental issues...</p>
+          </details>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
 
   <!-- Footer -->
   <footer class="footer" data-include="js/footer.html"></footer>
 
   <script src="js/include.js"></script>
+  <script src="js/loading.js"></script>
 </body>
 </html>

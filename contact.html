@@ -9,29 +9,44 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/loading.css">
 </head>
 <body>
 
   <!-- Header -->
   <div data-include="js/header.html"></div>
 
-  <main class="container">
-    <section class="section">
-      <div class="section-content">
-        <h2>Contact Us</h2>
-        <form>
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+  <!-- Wrapper for fade-in content -->
+  <div id="page-wrapper">
+    <main class="container">
+      <div id="skeleton-loader">
+        <div class="skeleton skeleton-heading"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-heading"></div>
+        <div class="skeleton skeleton-text"></div>
       </div>
-    </section>
-  </main>
+
+      <div id="page-content" style="display:none;">
+        <section class="section">
+          <div class="section-content">
+            <h2>Contact Us</h2>
+            <form>
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
 
   <!-- Footer -->
   <footer class="footer" data-include="js/footer.html"></footer>
 
   <script src="js/include.js"></script>
+  <script src="js/loading.js"></script>
 </body>
 </html>

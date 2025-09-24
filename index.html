@@ -4,36 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome - Bollinger Environmental, Inc.</title>
+
+  <!-- Base Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Loader Styles -->
+  <link rel="stylesheet" href="css/loading.css">
 </head>
 <body>
 
   <!-- Header -->
   <div data-include="js/header.html"></div>
 
-  <main class="container">
-    <section class="section">
-      <h2>Welcome</h2>
-      <p>Bollinger Environmental, Inc. provides professional environmental consulting services with a focus on sustainability, compliance, and ecological integrity.</p>
-    </section>
+  <!-- Wrapper for fade-in content -->
+  <div id="page-wrapper">
+    <main class="container">
+      <!-- Skeleton placeholder -->
+      <div id="skeleton-loader">
+        <div class="skeleton skeleton-heading"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-text"></div>
+        <div class="skeleton skeleton-heading"></div>
+        <div class="skeleton skeleton-text"></div>
+      </div>
 
-    <section class="section">
-      <h2>Our Mission</h2>
-      <p>Our mission is to provide ecological solutions for land improvement projects that balance development and conservation. We strive to guide clients toward sustainable outcomes that protect and restore natural resources for future generations.</p>
-    </section>
+      <!-- Actual content -->
+      <div id="page-content" style="display:none;">
+        <section class="section">
+          <h2>Welcome</h2>
+          <p>Bollinger Environmental, Inc. provides professional environmental consulting services with a focus on sustainability, compliance, and ecological integrity.</p>
+        </section>
 
-    <section class="section">
-      <h2>About Our President</h2>
-      <p>The President, <strong>Paul Bollinger</strong>, has over 10 years of environmental consulting experience. This experience has led to a diversity of environmental situations and projects.</p>
-    </section>
-  </main>
+        <section class="section">
+          <h2>Our Mission</h2>
+          <p>Our mission is to provide ecological solutions for land improvement projects that balance development and conservation. We strive to guide clients toward sustainable outcomes that protect and restore natural resources for future generations.</p>
+        </section>
+
+        <section class="section">
+          <h2>About Our President</h2>
+          <p>The President, <strong>Paul Bollinger</strong>, has over 10 years of environmental consulting experience. This experience has led to a diversity of environmental situations and projects.</p>
+        </section>
+      </div>
+    </main>
+  </div>
 
   <!-- Footer -->
   <footer class="footer" data-include="js/footer.html"></footer>
 
   <script src="js/include.js"></script>
+  <script src="js/loading.js"></script>
 </body>
 </html>
