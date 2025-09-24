@@ -107,3 +107,16 @@
     padding: 2rem 1rem; /* adjust spacing for small screens */
   }
 }
+
+.site-header .logo {
+  text-align: center; /* or left/right depending on your layout */
+}
+
+.site-header .phone {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 0.2em;
+  color: #2a5d34; /* brand color */
+  text-align: center;   /* centers the text */
+  display: block;       /* ensures it takes full width */
+}
